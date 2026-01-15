@@ -7,6 +7,9 @@
   font-family:'Courier New', Courier, monospace;
 }
 
+header h1 {
+  align-items: top;
+}
 body {
   display: flex;
   justify-content: center;
@@ -14,3 +17,45 @@ body {
   height: 100vh;
   background: gray;
 }
+
+.container {
+  width:auto;
+  max-width: 600;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+input, button{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+button {
+  background: rgb(100, 122, 131) /*concerned about my button*/
+  color white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(240, 238, 146);
+}
+
+  ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+
+  li {
+    background: rgb(252, 252, 202);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  }

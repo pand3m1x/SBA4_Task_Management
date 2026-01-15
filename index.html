@@ -18,11 +18,25 @@ https://www.youtube.com/watch?v=gRkaen6MeQc
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>Handy Dandy Task Manager</h1></header>
+    <header><h1>Pennysworth Task Manager</h1></header>
     <div class="container">
-        <div class="toDoApp">
-        </div>
+        <input type="text" id="task" placeholder="Task Name">
+        <input type="datetime-local" id="due-date">
+        <select id="category">
+            <option value="work">Work</option>
+            <option value="Personal">Personal</option>
+            <option value="Urgent">Urgent</option>
+        </select>
+        <select id="status">
+            <option value="not-started">🌑</option>
+            <option value="in-progress">🚧</option>
+            <option value="completed">✔️</option>
+            <option value="paused">💤</option>
+        </select>
+        <button id="addbtn">Add Task</button>
+        <ul id="task-list"></ul>
     </div>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
