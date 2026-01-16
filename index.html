@@ -18,9 +18,11 @@ https://www.youtube.com/watch?v=gRkaen6MeQc
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>Pennysworth Task Manager</h1></header>
+    <header><h1>Pennyworth Task Manager</h1></header>
     <div class="container">
+        <p>What do you need to accomplish, sir?</p>
         <input type="text" id="task" placeholder="Task Name">
+        <p>Don't forget a deadline Master Wayne!</p>
         <input type="datetime-local" id="due-date">
         <select id="category">
             <option value="work">Work</option>
@@ -35,7 +37,13 @@ https://www.youtube.com/watch?v=gRkaen6MeQc
         </select>
         <button id="addbtn">Add Task</button>
         <ul id="task-list"></ul>
+        <!-- <div class="task-btn">
+            <button id="editbtn">✏️</button>
+            <button id="trashbtn">🗑️</button>
+        </div> -->
+        <button id="clearbtn">Clear All Tasks</button>
     </div>
+
 
 <script src="script.js"></script>
 </body>

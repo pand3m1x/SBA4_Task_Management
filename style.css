@@ -9,9 +9,16 @@
 
 header h1 {
   align-items: top;
+  margin: 20px;
+  font-size: 2.5rem;
+}
+p {
+  margin-top: 5px;
+  font-size: 1.2rem;
 }
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -20,7 +27,7 @@ body {
 
 .container {
   width:auto;
-  max-width: 600;
+  max-width: 600px;
   background: white;
   padding: 20px;
   border-radius: 10px;
@@ -36,9 +43,19 @@ input, button{
   border-radius: 5px;
   border: 1px solid black;
 }
+
+#status {
+  display:none;
+}
+
+#status.show {
+  display: block;
+}
+
 button {
-  background: rgb(100, 122, 131) /*concerned about my button*/
-  color white;
+  background: rgb(84, 88, 90); /*concerned about my button [fixed bwah haha]*/
+  color: white;
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -58,4 +75,14 @@ button:hover {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
+  }
+
+  #taskbtn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #editbutton, #deletebutton {
+    background-color: rgb(251, 251, 199);
+    width: auto;
   }
