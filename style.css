@@ -77,12 +77,19 @@ button:hover {
     justify-content: space-between;
   }
 
-  #taskbtn {
-    display: flex;
-    justify-content: space-between;
+  #trashbtn:hover {
+    cursor: pointer;
   }
 
-  #editbutton, #deletebutton {
+  #editbtn:hover {
+    cursor: pointer;
+  }
+  /* I need to edit elements added in JS directly in JS? (nope just needed an id)
+  
+  #editbtn, #trashbtn {
     background-color: rgb(251, 251, 199);
     width: auto;
   }
+  #trashbtn:hover {
+    cursor: pointer;
+  } */
