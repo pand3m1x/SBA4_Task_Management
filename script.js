@@ -55,7 +55,7 @@ function addTask(){
     editbtn.id = "editbtn"
     editbtn.innerText = "✏️";
     editbtn.onclick = function(){
-      // let span = prompt("Edit your task:", `${taskInput} - ${category}`); //Is this where I try to splice?
+      // let span = prompt("Edit your task:", `${taskInput} - ${category}`); //Is this where I try to splice? How do I edit directly in the element/line/field?
     }
     li.appendChild(editbtn);
    
@@ -72,7 +72,7 @@ function addTask(){
 
     let timeDiff= new Date(dueDate) - new Date();
     if (timeDiff > 0) {
-      setTimeout(() => alert(`Master Wayne, your task "${taskInput}" is due today!`), timeDiff);
+      setTimeout(() => alert(`Master Wayne, your task "${taskInput}" is due today!`), timeDiff); //how do I get this to trigger?
       console.log(timeDiff);
     }
     
@@ -100,6 +100,17 @@ function addTask(){
 let button1 = document.getElementById("addbtn");
 
 button1.addEventListener("click",addTask);
+
+function clearTasks(){
+  let taskList = document.getElementById("task-list");
+  taskList.innerHTML = "";
+}
+
+let button2 = document.getElementById("clearbtn");  
+button2.addEventListener("click", clearTasks);
+
+
+//              --trash pile for later--
 
 // Move below into function add task and stop fighting the function for use of its variables?
 // // tricky edit button
@@ -132,10 +143,3 @@ button1.addEventListener("click",addTask);
 // editbtn.addEventListener("click", editTask);
 
 // Clear all tasks button (and this works too!)
-function clearTasks(){
-  let taskList = document.getElementById("task-list");
-  taskList.innerHTML = "";
-}
-
-let button2 = document.getElementById("clearbtn");  
-button2.addEventListener("click", clearTasks);
