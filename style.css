@@ -74,7 +74,8 @@ button:hover {
     border-radius: 5px;
     margin-top: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
   }
 
   #trashbtn:hover {
@@ -83,6 +84,11 @@ button:hover {
 
   #editbtn:hover {
     cursor: pointer;
+  }
+
+  .completed .task-text {
+    text-decoration:line-through;
+    opacity: 0.6;
   }
   /* I need to edit elements added in JS directly in JS? (nope just needed an id)
   
