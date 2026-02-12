@@ -63,33 +63,42 @@ button:hover {
   background: rgb(240, 238, 146);
 }
 
-  ul {
-    list-style: none;
-    margin-top: 20px;
-  }
+#deleteBtn, #editBtn {
+  width: 50px; 
+}
 
-  li {
-    background: rgb(252, 252, 202);
-    padding: 10px;
-    border-radius: 5px;
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
+#checkbox {
+  width:30px;
+  height:30px;
+}
 
-  #trashbtn:hover {
-    cursor: pointer;
-  }
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
 
-  #editbtn:hover {
-    cursor: pointer;
-  }
+li {
+  background: rgb(252, 252, 202);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
-  .completed .task-text {
-    text-decoration:line-through;
-    opacity: 0.6;
-  }
+#trashbtn:hover {
+  cursor: pointer;
+}
+
+#editbtn:hover {
+  cursor: pointer;
+}
+
+.completed .task-text {
+  text-decoration:line-through;
+  opacity: 0.6;
+}
   /* I need to edit elements added in JS directly in JS? (nope just needed an id)
   
   #editbtn, #trashbtn {

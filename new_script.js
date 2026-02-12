@@ -23,6 +23,7 @@ function renderTasks() {
     
   const checkbox = document.createElement("input")
   checkbox.type = "checkbox";
+  checkbox.id = "checkbox";
   checkbox.className = "complete-checkbox";
   checkbox.checked = task.completed;
 
@@ -36,10 +37,12 @@ function renderTasks() {
   
   const editBtn = document.createElement("button");
   editBtn.dataset.action = "edit";
+  editBtn.id = "editBtn";
   editBtn.textContent = "✏️";
 
   const deleteBtn = document.createElement("button");
   deleteBtn.dataset.action = "delete";
+  deleteBtn.id = "deleteBtn"
   deleteBtn.textContent = "🗑️";
 
   li.append(checkbox, textSpan, metaSpan, editBtn, deleteBtn);
@@ -110,8 +113,6 @@ taskList.addEventListener("click", function (event) {
       }
     })
   }
-
-  renderTasks();
 });
 
 function saveEdit(index, newText){
